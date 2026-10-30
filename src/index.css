@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+
+    /* Geometric Balance Design Theme Palette */
+    --color-ivory: #FAF9F6;
+    --color-ink: #0A0A0A;
+    --color-burgundy: #601212;
+    --color-burgundy-dark: #3B0A0A;
+    --color-rose-smoke: #D1B3B3;
+    --color-nude: #EFDBCF;
+    --color-sand: #EAE3D9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono-code {
+  font-family: 'Space Mono', monospace;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.outline-text {
+  -webkit-text-stroke: 1px #0A0A0A;
+  color: transparent;
+}
+
+.outline-text-burgundy {
+  -webkit-text-stroke: 1px #601212;
+  color: transparent;
+}
+
+/* Custom Scrollbar for Geometric Balance */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #601212;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B0A0A;
+}
+
+/* Editorial Noise Texture */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Glass & Card Surfaces */
+.bg-glass-card {
+  background: rgba(250, 249, 246, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(10, 10, 10, 0.12);
+}
+
+.bg-burgundy-card {
+  background-color: #601212;
+  color: #FAF9F6;
+}
+
+.bg-nude-card {
+  background-color: #EFDBCF;
+  color: #0A0A0A;
+}
+
+/* ==========================================
+   Dark Mode Theme Overrides
+   ========================================== */
+html.dark,
+.dark {
+  color-scheme: dark;
+  background-color: #0E0D0D !important;
+  color: #FAF9F6 !important;
+}
+
+.dark body {
+  background-color: #0E0D0D !important;
+  color: #FAF9F6 !important;
+}
+
+/* Background Overrides */
+.dark .bg-\[\#FAF9F6\],
+.dark .bg-glass-card {
+  background-color: #171515 !important;
+  color: #FAF9F6 !important;
+}
+
+.dark .bg-\[\#EFDBCF\],
+.dark .bg-nude-card {
+  background-color: #241D1D !important;
+  color: #FAF9F6 !important;
+}
+
+.dark .bg-\[\#EAE3D9\] {
+  background-color: #2E2626 !important;
+  color: #FAF9F6 !important;
+}
+
+.dark .bg-\[\#FAF9F6\]\/90 {
+  background-color: rgba(23, 21, 21, 0.92) !important;
+}
+
+.dark .bg-\[\#FAF9F6\]\/80 {
+  background-color: rgba(23, 21, 21, 0.85) !important;
+}
+
+.dark .bg-\[\#EFDBCF\]\/30,
+.dark .bg-\[\#EFDBCF\]\/40 {
+  background-color: rgba(36, 29, 29, 0.45) !important;
+}
+
+/* Text Overrides for High Contrast Dark Mode */
+.dark .text-\[\#0A0A0A\] {
+  color: #FAF9F6 !important;
+}
+
+.dark .text-\[\#0A0A0A\]\/80 {
+  color: rgba(250, 249, 246, 0.88) !important;
+}
+
+.dark .text-\[\#0A0A0A\]\/70 {
+  color: rgba(250, 249, 246, 0.75) !important;
+}
+
+.dark .text-\[\#0A0A0A\]\/60 {
+  color: rgba(250, 249, 246, 0.65) !important;
+}
+
+.dark .text-\[\#0A0A0A\]\/50 {
+  color: rgba(250, 249, 246, 0.52) !important;
+}
+
+.dark .text-\[\#0A0A0A\]\/40 {
+  color: rgba(250, 249, 246, 0.42) !important;
+}
+
+/* Outline Text in Dark Mode */
+.dark .outline-text {
+  -webkit-text-stroke: 1px #FAF9F6;
+  color: transparent;
+}
+
+/* Borders in Dark Mode */
+.dark .border-\[\#0A0A0A\]\/10,
+.dark .border-\[\#0A0A0A\]\/15,
+.dark .border-\[\#0A0A0A\]\/20,
+.dark .border-\[\#0A0A0A\]\/30,
+.dark .border-\[\#0A0A0A\]\/40,
+.dark .border-\[\#0A0A0A\]\/80 {
+  border-color: rgba(250, 249, 246, 0.18) !important;
+}
+
+/* Buttons in Dark Mode */
+.dark button.border-2.border-\[\#0A0A0A\]\/80,
+.dark a.border-2.border-\[\#0A0A0A\]\/80 {
+  border-color: rgba(250, 249, 246, 0.8) !important;
+  color: #FAF9F6 !important;
+}
+
+/* Form Controls in Dark Mode */
+.dark input,
+.dark select,
+.dark textarea {
+  background-color: #1F1C1C !important;
+  color: #FAF9F6 !important;
+  border-color: rgba(250, 249, 246, 0.25) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: rgba(250, 249, 246, 0.45) !important;
+}
+
+.dark option {
+  background-color: #1F1C1C !important;
+  color: #FAF9F6 !important;
+}
+
+/* Table styling in Dark Mode */
+.dark table th {
+  background-color: #241D1D !important;
+  color: #FAF9F6 !important;
+}
+
+.dark table td {
+  color: #FAF9F6 !important;
+  border-color: rgba(250, 249, 246, 0.12) !important;
+}
+
+/* Scrollbars in Dark Mode */
+.dark ::-webkit-scrollbar-track {
+  background: #0E0D0D;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #601212;
+  border-radius: 2px;
+}
+
+/* Infinite Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
