@@ -1,64 +1,78 @@
-# Lakshmi Kumari — Creative Full-Stack Engineer
 
-A personal portfolio website showcasing my projects, skills, and experience as a full-stack developer.
+# ✨ Lakshmi Kumari | Personal Portfolio
 
-## 🔗 Live Demo
-[Add your deployed link here once live — e.g. https://lakshmikumari.vercel.app]
+A modern, creative and responsive personal portfolio built to showcase my skills, projects, and journey as a web developer.
+
+## 🌐 About the Project
+
+This portfolio represents my creativity, technical skills, and passion for building beautiful and user-friendly web experiences.
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Vite
 
 ## ✨ Features
-- Interactive project showcase with live demos and case studies
-- Skills and tech stack overview
-- Career timeline
-- Fully responsive design across desktop, tablet, and mobile
-- Smooth animations and interactive UI elements
 
-## 🛠️ Tech Stack
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Deployment:** Vercel (frontend), Railway (backend)
+- Modern and responsive design
+- Interactive user interface
+- Smooth navigation
+- Creative layouts and styling
+- Mobile-friendly experience
 
-## 📁 Projects Featured
-- **AURA E-Commerce** — [one-line description of what it does]
-- **Luxe Craft Jewelry** — [one-line description]
-- **Social Sync** — [one-line description]
+## 📂 Project Structure
 
-## 🚀 Getting Started
+```text
+lakshmi-portfolio/
+├── public/
+├── src/
+├── index.html
+├── package.json
+└── vite.config.js
+```
 
-Clone the repository and install dependencies:
+## 🚀 Run Locally
+
+Clone this repository:
 
 ```bash
-git clone https://github.com/760lakshmi-create/<your-repo-name>.git
-cd <your-repo-name>
+https://github.com/760lakshmi-create/lakshmi-portfolio
+```
+
+Navigate to the project:
+
+```bash
+cd lakshmi-portfolio
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+## 👩‍💻 Developer
 
-```bash
-npm run build
-```
+**Lakshmi Kumari**
 
-## 📂 Project Structure
+Creative Full Stack Developer
 
-```
-src/
-├── components/     # Reusable UI components
-├── data/           # Portfolio content (projects, skills, etc.)
-├── pages/          # Page-level components
-└── styles/         # Global styles
-```
+Interested in building modern web experiences and exploring frontend and backend technologies.
 
-## 📬 Contact
+## 📬 Connect With Me
 
-- **GitHub:** [760lakshmi-create](https://github.com/760lakshmi-create)
-- **LinkedIn:** [lakshmi-kumari-45b892343](https://www.linkedin.com/in/lakshmi-kumari-45b892343/)
-- **Email:** [760lakshmi@gmail.com]
+- GitHub: https://github.com/760lakshmi-create
+- Portfolio: Coming Soon
 
 ---
 
-Built with ❤️ by Lakshmi Kumari
+⭐ If you like this project, consider giving it a star!
